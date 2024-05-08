@@ -26,6 +26,14 @@
   .arrow {
     display: none;
   }
+  .icon {
+    height: 1.6rem;
+  }
+  .contact-info-upper-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   section,
   .section-container {
     height: fit-content;
@@ -44,13 +52,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+  #contact{
     height: 40vh;
   }
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+  footer {
+    height: 20vh;
   }
   article {
     font-size: 1rem;
@@ -59,6 +69,24 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+
+  footer .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  footer .nav-links a:hover {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.50rem;
+  }
+  .contact-info-upper-container a{
+    font-size:0.75rem;
+  }
+  .contact-info-upper-container a:hover{
+    font-size: 0.90rem;
+  }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -68,18 +96,25 @@
     margin: 0;
   }
   .contact-info-container p, .nav-link li a {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   .experience-sub-title {
     font-size: 1.25rem;
   }
   .logo {
-    font-size: 1.5re,;
+    font-size: 1.5rem;
   }
-  .nav-link {
+  .icon {
+    height: 1.4rem;
+  }
+  .menu-links a {
+    font-size: 0.75rem;
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+  .menu-links.open a:hover{
+    font-size: 0.9rem;
   }
   .section__pic-container {
     width: auto;
@@ -90,7 +125,7 @@
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .text-container {
     text-align: center;

@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
+    <img src="./assets/up-arrow.png" alt="up arrow" class="scroll_up_arrow" onclick="location.href='./#'">
     <nav id="desktop-nav">
         <div class="logo">Shemv Lou</div>
         <div>
@@ -23,6 +25,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><img src="./assets/moon-icon.png" alt="moon icon" class="icon" onclick="toggleTheme()"></li>
             </ul>
         </div>
     </nav>
@@ -42,6 +45,7 @@
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#"><img src="./assets/moon-icon.png" alt="moon icon" class="icon theme-icon" onclick="toggleTheme()"></a></li>
             </div>
         </div>
     </nav>
@@ -317,20 +321,21 @@
 
     <!-- <hr> -->
 
-    <footer>
+    <footer class="gradient-background">
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="last_link_in_footer_nav">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <p>Copyright &#169; 2024 ShemV Lou. All Rights Reserved</p>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <script src="./main.js"></script>
 </body>
 
