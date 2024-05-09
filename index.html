@@ -12,11 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
-    <img src="./assets/up-arrow.png" alt="up arrow" class="scroll_up_arrow" onclick="location.href='./#'">
+
+    <img src="./assets/up-arrow.png" alt="up arrow" class="scroll_up_arrow" onclick="location.href='./#profile'">
+
     <nav id="desktop-nav">
         <div class="logo">Shemv Lou</div>
         <div>
@@ -45,34 +47,34 @@
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                <li><a href="#"><img src="./assets/moon-icon.png" alt="moon icon" class="icon theme-icon" onclick="toggleTheme()"></a></li>
+                <li><a href="#"><img src="./assets/moon-icon.png" alt="moon icon" class="icon theme-icon"
+                            onclick="toggleTheme()"></a></li>
             </div>
         </div>
     </nav>
 
     <section id="profile">
-
-        <div class="section__pic-container">
-            <img src="./assets/MyProfile.png" alt="ShemV Profile Pic">
-        </div>
-        <div class="section__text">
-
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">ShemV Lou</h1>
-            <p class="section__text__p2">Full-Stack Web Developer</p>
-
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/MyCV.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            <div class="section__pic-container">
+                <img src="./assets/MyProfile.png" alt="ShemV Profile Pic">
             </div>
+            <div class="section__text">
 
-            <div id="socials-container">
-                <img src="./assets/Linkedin.png" alt="My linkedin profile" class="icon"
-                    onclick="location.href='https://linkedin.com/'">
-                <img src="./assets/github icon.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/Shema30'">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">ShemV Lou</h1>
+                <p class="section__text__p2">Full-Stack Web Developer</p>
+
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/MyCV.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+
+                <div id="socials-container">
+                    <img src="./assets/Linkedin.png" alt="My linkedin profile" class="icon"
+                        onclick="location.href='https://linkedin.com/'">
+                    <img src="./assets/github icon.png" alt="My Github profile" class="icon"
+                        onclick="location.href='https://github.com/Shema30'">
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- <hr> -->
@@ -322,6 +324,7 @@
     <!-- <hr> -->
 
     <footer class="gradient-background">
+        <!-- <div id="particles-js"> -->
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
@@ -333,8 +336,9 @@
             </div>
         </nav>
         <p>Copyright &#169; 2024 ShemV Lou. All Rights Reserved</p>
+        <!-- </div> -->
     </footer>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <script src="./main.js"></script>
 </body>
